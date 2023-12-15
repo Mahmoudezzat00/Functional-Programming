@@ -1,0 +1,49 @@
+Built-in functions in clean
+
+toReal, toInt, toString, toChar -> casting functions
+(num1) rem (num2) -> returns the remainder of num1 divided by num2
+(num1) ^ (num2) -> returns num1 raised to the power of num2
+abs (num) -> returns the absolute value of the given number
+
+/* here I denoted a function that receives the element of the list and returns true or false as cfunction
+
+isMember (element) (list) -> returns whether the given element is inside the list
+isEven (number) -> returns if the given number is even
+repeatn (n) (element) -> returns a list that contains the element n number of times
+filter (cfunction) list -> returns a new list that contains only the element for which the cfunction returned true
+map (function) list -> applies the given function to every element of the list
+and (boolean_list) -> joins all the boolean values of the list with && operator
+or (boolean_list) -> joins all the boolean values of the list with || operator
+length (list) -> returns how many element the list contains
+flatten (multi-dimensional_list) -> e.g if 2 dimensional list is passed, returns 1 dimensional list that contains all the elements
+hd (list) -> returns the first element of a list
+tl (list) -> returns a list that contains every element except the first one
+last (list) -> returns the last element of a list
+init (list) -> returns a list that contains every element except the last one
+take (number) (list) -> returns a list that contains the first given number of elements of the list
+drop (number) (list) -> returns a list after removing the first given number of elements from the list
+dropWhile (cfunction) (list) -> removes the elements that fulfills the condition (the cfunction returns true) but stops
+  	when the cfunction returns False. dropWhile (isEven) [2,3,4] = [3,4] dropWhile (isEven) [2,2,4] = []
+takeWhile (cfunction) list -> the exact opposite of dropWhile
+reverse (list) -> reverses the list 
+insertAt (num) (num2) (list) -> inserts the num2 at the position num in the given list (num indicates the index at which we want to insert)
+	indexing starts from zero
+removeAt (index) (list) -> deletes the element at the given index and returns the list
+updateAt (index) (num) (list) -> changes the value of the element at the given index with the given num and returns the new list
+splitAt (num) (list) -> returns a tuple where the first element contains a list that num number of elements, and second element contains the remaining list
+	splitAt 1 [2,3,4] = ([2], [3,4])
+repeat (num) -> returns an infinite list containing the num repeat 1 = [1,1,1,...]
+sum (list) -> returns the sum of all the elements
+prod (list) -> returns the product of all the elements
+
+example tuple t: (a,b)
+fst t -> returns a
+snd t -> returns b
+
+example tuple t2: (a,b,c)
+fst3 t2 -> returns a
+snd3 t2 -> returns b
+thd3 t2 -> returns c
+
+
+P.S You don't have to memorize all of them. In fact you can implement them on your own using recursion or list comprehension

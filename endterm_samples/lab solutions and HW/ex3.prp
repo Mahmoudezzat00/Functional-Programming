@@ -1,0 +1,12 @@
+Version: 1.5
+MainModule
+	Name:	ex3
+	Dir:	{Project}
+	DclOpen:	False
+	Icl
+		WindowPosition
+			X:	-8
+			Y:	-31
+			SizeX:	1349
+			SizeY:	634
+	IclOpen:	True

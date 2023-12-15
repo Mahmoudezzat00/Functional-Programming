@@ -1,0 +1,134 @@
+.comp 920 000111010010000
+.start __endterm1_Start
+.depend "_SystemEnumStrict" "20211222162233"
+.depend "_SystemStrictLists" "20211222162233"
+.depend "StdStrictLists" "20211222162231"
+.depend "_SystemEnum" "20211222162228"
+.depend "StdEnum" "20211222162231"
+.depend "StdMisc" "20211222162231"
+.depend "StdFunctions" "20211222162231"
+.depend "StdCharList" "20211222162235"
+.depend "StdTuple" "20211222162233"
+.depend "StdOrdList" "20211222162235"
+.depend "StdList" "20230424180354"
+.depend "StdClass" "20211222162233"
+.depend "StdFile" "20211222162231"
+.depend "StdString" "20211222162235"
+.depend "_SystemArray" "20211222162231"
+.depend "StdArray" "20211222162233"
+.depend "StdChar" "20211222162228"
+.depend "StdReal" "20211222162231"
+.depend "StdInt" "20211222162231"
+.depend "StdOverloaded" "20211222162231"
+.depend "StdBool" "20211222162231"
+.depend "StdEnv" "20211222162231"
+.module m_endterm1 "endterm1" "20230521141812"
+.endinfo
+.impmod _system
+.implab _cycle_in_spine
+.implab _type_error
+.implab _hnf
+.impdesc e_system_dind
+.implab e_system_nind e_system_eaind
+.impdesc e_system_dif
+.implab e_system_nif e_system_eaif
+.implab e_system_sif
+.impdesc e_system_dAP
+.implab e_system_nAP e_system_eaAP
+.implab e_system_sAP
+.impdesc ARRAY
+.impdesc _Nil
+.impdesc _Cons
+.impdesc _Conss
+.implab n_Conss ea_Conss
+.impdesc _Consts
+.implab n_Consts ea_Consts
+.impdesc _Conssts
+.implab n_Conssts ea_Conssts
+.impdesc _Tuple
+.impdesc d_S.1
+.implab n_S.1 ea_S.1
+.impdesc d_S.2
+.implab n_S.2 ea_S.2
+.impdesc d_S.3
+.implab n_S.3 ea_S.3
+.impdesc d_S.4
+.implab n_S.4 ea_S.4
+.impdesc d_S.5
+.implab n_S.5 ea_S.5
+.impdesc d_S.6
+.implab n_S.6 ea_S.6
+.implab _driver
+.desc0 d7 0 "BSc"
+.desc0 d8 1 "MSc"
+.desc0 d9 2 "PhD"
+.desc d15 _hnf _add_arg 2 0 "BTNode"
+.desc d16 _hnf _hnf 0 0 "BTLeaf"
+.desc d18 _hnf _add_arg 2 0 "Pointer"
+.desc d19 _hnf _hnf 0 0 "Nil"
+.desc d26 _hnf _add_arg 2 0 "Elem"
+.desc d27 _hnf _hnf 0 0 "Empty"
+.desc d29 _hnf _add_arg 1 0 "FirstName"
+.desc d30 _hnf _add_arg 1 0 "MiddleName"
+.desc d31 _hnf _add_arg 1 0 "LastName"
+.desc d33 _hnf _add_arg 3 0 "Node"
+.desc d34 _hnf _hnf 0 0 "Leaf"
+.export __endterm1_Start
+.o 0 0
+__endterm1_Start
+	build _ 0 n3
+.d 1 0
+	jmp _driver
+.n 0 _ ea3
+.o 1 0
+n3
+	push_node _cycle_in_spine 0
+.o 1 0
+ea3
+.o 1 0
+s3
+	build _ 0 n1
+.d 2 0
+	jmp s2
+.n 0 _ ea1
+.o 1 0
+n1
+	push_node _cycle_in_spine 0
+.o 1 0
+ea1
+.o 1 0
+s1
+	buildh d34 0
+	buildh d34 0
+	buildAC "Mohido"
+	buildh ARRAY 1
+	buildh d30 1
+	buildh d33 3
+	buildh d34 0
+	buildh d34 0
+	buildAC "Arm"
+	buildh ARRAY 1
+	buildh d31 1
+	buildh d33 3
+	buildAC "Beka"
+	buildh ARRAY 1
+	buildh d30 1
+	buildh d33 3
+	buildh d34 0
+	buildh d34 0
+	buildAC "Forza"
+	buildh ARRAY 1
+	buildh d31 1
+	buildh d33 3
+	buildAC "Tariq"
+	buildh ARRAY 1
+	buildh d29 1
+	fillh d33 3 3
+.d 1 0
+	rtn
+.o 2 0
+s2
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn

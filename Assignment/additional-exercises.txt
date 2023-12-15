@@ -1,0 +1,20 @@
+additional exercises:
+
+- write a function that returns the index of the largest element of a given list
+- write a function that returns the index of the smallest element of a given list
+- write a function that takes 2 matrixes and returns their addition (matrix will be represented as 2 dimensional list)
+- write a function that returns the length of the longest sublist in a list of lists.
+- 1. write a function that takes a list and returns true or false (you can check any kind of condition)
+   2. write a function that takes 2 dimensional list and only returns the sublists that fulfills the 1st part's condition
+- write a function that takes an integer as an input and remove some of the digits based on some condition and change
+   the remaining numbers using a lambda function 
+- write a function that takes 2 dimensional list and remove some of the elements of each sublist based on some condition
+   (e.g remainder is not 2 if divided by 5) then return the (product/sum) of all the remaining numbers
+- write a function that takes list of tuples and only returns the tuples that fulfill a certain condition
+- write a function that takes a tuple and a list and change the elements of the list in some kind of way using  
+   the tuple's 1st and 2nd element
+- write a function that takes 2 numbers and a list and again do some computation (the goal is to work with multiple inputs)
+- and lastly, try to play around with integers, making a list of its digits, checking if a number is prime if the digits are
+   reversed or changed if the positions change in certain way, or if a number has the same property if we remove 
+   one of the digits etc.
+ 
